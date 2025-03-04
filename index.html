@@ -26,8 +26,7 @@
       
     linear-gradient(180deg, rgba(23,14,184,1) 50%, white 50%);
     
-    background-size: 
-      100% 41%    
+    background-size: 100% 41%    
   }
   
   
@@ -54,7 +53,7 @@
   .top-cup {
     position: absolute;
     left: 250px;
-    bottom: 155px;
+    bottom: 150px;
   }
   
   .bottom-cup {
@@ -65,43 +64,135 @@
   
   .can-cup {
     position: absolute;
-    left: 150px;
-    top: 50px;
+    left: 240px;
+    top: 120px;
   }
   
   .stripe{
     position: absolute;
     background: white;
     border: 1px solid black;
+    border-radius: 42% 38% 37% 39% / 32% 29% 31% 32% ;
     width: 15%;
     height: 50%;
     transform: translate(29px, 25px);
   }
   
-  .kettle {
+  .lid {
+    position: absolute;
+    background: #ffcb00;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .coffeecan1{
+    transform: translate(0px, 0px);
+    clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 6%);
+  }
+  
+  .coffeecan2 {
+    transform: translate(0px, 0px);
+    clip-path: polygon(0 0, 100% 0%, 100% 6%, 0 6%);
+  }
+  
+  .middle {
     position: absolute;
     background: #ff6a00;
     border: 1px solid black;
-    width: 100px;
+    border-radius: 42% 38% 39% 45% / 25% 25% 49% 49%;
+    width: 150px;
     height: 100px;
-    left: 60px;
-    top: 50px;
+    left: 100px;
+    top: 140px;
   }
+  
+  .handle {
+    position: absolute;
+    background: black;
+    border: 1px solid black;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 40px;
+    height: 40px;
+    right: 305px;
+    top: 100px;
+    z-index: 2;
+  }
+  
+  .coffee {
+    width: 150px;
+    height: 220px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 21% 18% 21% 24% / 0% 0% 2% 3%   ;
+  }
+  
+  .one {
+    position: absolute;
+    left: 100px;
+    bottom: 60px;
+    z-index: 1;
+  }
+  
+  .two {
+    position: absolute;
+    right: 100px;
+    bottom: 60px;
+  }
+  
+  .red {
+    position: absolute;
+    width: 150px;
+    height: 85px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 36% 38% 44% 46% / 0% 0% 9% 7%;
+    top: 140px;
+    
+  }
+  
+  h1 {
+    position: relative;
+    left: 85px;
+    
+  }
+  
+  p {
+    position: relative;
+    color: white;
+  }
+
 </style>
 
 <div class="frame">
-  <div class="coffee one"></div>
-  <div class="coffee two"></div>
+  <div class="coffee one">
+  <div class="lid coffeecan1"></div>
+    <div class="red bottom1"></div>
+      <h1>CAF</h1><h1>BUS</h1>
+    <p>
+      I LOVE COFFEE. ACTUALLY, COFFEE IS KINDA MID
+    </p>
+  </div>
+  <div class="coffee two">
+   <div class="lid coffeecan2"></div>
+    <div class="red bottom2"></div>
+    <h1>AFE</h1><h1>STE</h1>
+    <p>
+      I LOVE COFFEE. ACTUALLY, COFFEE IS KINDA MID
+    </p>
+  </div>
+  
   <div class="kettle middle"></div>
-  <div class="kettle lid"></div>
+  <div class="kettle handle"></div>
   <div class="cup can-cup"></div>
-   
+
   <div class="cup top-cup triangle">
-    <div class="stripe"></div>
+    <div class="stripe cup"></div>
   </div>
 
+
   <div class="cup bottom-cup triangle">
-  <div class="stripe"></div>
+  <div class="stripe coffeecup"></div>
   </div>
   
 </div>
